@@ -8,7 +8,9 @@
 import pandas as pd 
 from langchain_gigachat import GigaChat
 from langchain_core.tools import tool 
-from langchain_community.tools import DuckDuckGoSearchResults
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain.agents import AgentExecutor, create_tool_calling_agent
+from langchain.schema import SystemMessage
 import os
 from dotenv import load_dotenv
 
@@ -33,7 +35,7 @@ class AiModelClient:
 
     BASE_URL = "https://ngw.devices.sberbank.ru:9443/api/v2/oauth"
 
-    def create_api_token(self) -> str:
+    def create_model(self) -> str:
         """ Создаем экземпляр класса для работы с моделями GigaChat """
 
         giga = GigaChat(credentials=os.environ.get('GIGACHAT_AUTHORIZATION_KEY'), 
@@ -86,12 +88,13 @@ class PrecisionAiAgent:
         """
         ds = DataSourceClient()
         data_sales = ds.create_dataset()
+        return data_sales
     
     @tool 
-    def check_dataset_correct(self) -> pd.DataFrame: 
-        f""" Проверяем датасет переданный ранее на корректность по следующим признакам: 
+    def check_dataset_correct(self, data_sales: pd.DataFrame) -> pd.DataFrame: 
+        """ Проверяем датасет переданный ранее на корректность по следующим признакам: 
 
-            {self.data_error_standart} - здесь представлены нормы отклонения от среднего значения для каждого поля в процентах (если указано
+            data_error_standart (переменная)- здесь представлены нормы отклонения от среднего значения для каждого поля в процентах (если указано
             значение None, то не применяй сравнение для этого поля), например, чтобы понять норму отклонения для себестоимости, мы должны 
             посчитать среднее значений для этой категории товара без учета выбросов и сравнить с текущим значением строки это значение, 
             если значение строки отличается больше чем на заданный показатель, то данные скорее неверные. 
@@ -100,8 +103,58 @@ class PrecisionAiAgent:
 
             Верни далее по цепочке обновленный датафрейм.
         """
-        ds = DataSourceClient()
-        data_sales = ds.create_dataset()
+        data_error_standart = self.data_error_standart
+        data_sales['is_valid'] = 1
+        return data_sales
+
+    @tool
+    def add_your_solution(self, data_sales: pd.DataFrame) -> pd.DataFrame: 
+        """
+            На основе полученного датафрейма, для каждой строки сделай свой вердик относительно корректности по 4 оценкам: 
+            0 - не похоже на правду  
+            0.25 - похоже на правду на 25% 
+            0.5 - верно наполовину
+            1 - абсолютная правда  
+
+            Добавь новое поле is_valid_gpt и расставь эти значения для каждой строки. 
+
+            Верни далее по цепочке обновленный датафрейм. 
+        """
+        data_sales['is_valid_gpt'] = 0
+        return data_sales
+
+    def create_agent_chain(self) -> pd.DataFrame: 
+        """ Запускаем всю цепочку обработки данных """
+        ai = AiModelClient()
+        giga_model = ai.create_model()
+
+        tools = [
+            self.read_dataset_sales, 
+            self.check_dataset_correct, 
+            self.add_your_solution
+        ]
+
+        prompt = ChatPromptTemplate.from_messages([
+            SystemMessage(content="""
+                Ты AI агент для проверки точности данных. Выполни последовательно все этапы проверки.
+            """), 
+            MessagesPlaceholder(variable_name="agent_scratchpad")
+        ])
+
+        agent = create_tool_calling_agent(giga_model, tools, prompt)
+        agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+
+        return agent_executor
+    
+    def run_chain(self):
+        """ Запуска всю цепочку обработки """   
+        agent_executor = self.create_agent_chain()
+        result = agent_executor.invoke({
+            "input": "Запусти полную проверку данных: прочитай датасет, проверь корректность и добавь AI оценку"
+        })
+
+        return result["output"]
+
 
 class FulnessAiAgent: 
     """ ИИ агент для оценки полноты данных """
@@ -149,9 +202,7 @@ class RelevantAiAgent:
 
 
 if __name__ == '__main__': 
-    ai_model = AiModelClient()
-    test = ai_model.create_api_token()
-    print(test)
 
-    data_source = DataSourceClient()
-    data_source.create_dataset()
+    agent = PrecisionAiAgent()
+    final_data = agent.run_chain()
+
