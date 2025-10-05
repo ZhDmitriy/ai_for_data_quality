@@ -1,0 +1,98 @@
+student_id,full_name,email,phone_number,date_of_birth,age,admission_year,faculty,group_name,gpa,last_test_score,attendance_percent,scholarship_amount,extracurricular_activities,on_probation,has_dormitory,enrollment_status,preferred_language,mentor_id,average_study_hours,library_visits_per_month
+1,Ivanov Alexey Sergeevich,a.ivanov@edu.ru,+79161234567,2002-05-15,21,2020,Computer Science,CS-202,4.5,92,96.5,5000,Programming,False,True,Active,Russian,MENT-101,20,8
+2,Petrova Anna Viktorovna,a.petrova@edu.ru,+79035551234,2003-11-30,20,2021,Linguistics,LG-211,4.8,88,99.0,7500,Debates,False,False,Active,English,MENT-205,25,12
+3,#Invalid data,not-an-email,12345,2015-99-99,-10,2030,Economics,,-1,150,120.0,-5000,,True,False,Expelled,Russian,MENT-999,999,100
+4,Sidorov Dmitry Petrovich,d.sidorov@edu.ru,+79219876543,2001-07-22,22,2019,Physics,F-191,3.9,75,85.2,0,Volleyball,False,True,Active,Russian,MENT-088,15,4
+5,Kuznetsova Elena Olegovna,e.kuznetsova@edu.ru,,2004-02-14,19,2022,Journalism,ZHR-221,4.2,81,91.7,3500,Photo Club,False,True,Active,Russian,MENT-156,18,6
+6,Vasilyev Igor Nikolaevich,i.vasilyev@edu.ru,+79031234567,2000-12-01,23,2018,Mathematics,MM-181,3.5,65,78.9,0,,True,False,Active,Russian,MENT-042,12,2
+7,#Invalid data,,+7(999)999-99-99,1998-03-10,25,2023,Medicine,LD-201,5.5,102,,10000,Surgery,False,True,Academic Leave,Latin,,40,25
+8,Novikova Maria Igorevna,m.novikova@edu.ru,+79167654321,2003-08-08,20,2021,Psychology,PS-214,4.6,90,94.1,6000,Theater,False,False,Active,Russian,MENT-311,22,10
+9,Morozov Pavel Alekseevich,p.morozov@edu.ru,+79095554433,2002-01-25,21,2020,History,IST-203,3.2,58,70.5,0,,False,True,Active,Russian,MENT-278,10,15
+10,Orlova Alisa Dmitrievna,a.orlova@edu.ru,+79111223344,2004-04-18,19,2022,Design,DZ-225,4.9,95,98.8,8000,Painting,False,False,Active,Russian,MENT-412,30,5
+11,#Invalid data,student@mail.com,+79160000001,2005-13-45,18,2024,NULL,AB-241,4.1,85,105.0,2000,Swimming,NO,Yes,Active,English,MENT-500,15,8
+12,Zhukov Artem Valeryevich,a.zhukov@edu.ru,+79087776655,2001-10-05,22,2019,Law,YR-192,4.3,87,92.3,4500,Chess,False,True,Active,Russian,MENT-189,17,7
+13,Tarasova Victoria Petrovna,v.tarasova@edu.ru,+79154321123,2003-06-12,20,2021,Management,MN-217,3.8,72,88.0,3000,,True,False,Active,Russian,MENT-224,14,3
+14,#Invalid data,le_petit_prince@fr.fr,+33142528000,1995-09-22,28,2025,Philosophy,FL-251,4.7,89,97.5,7000,Poetry,False,True,Active,French,MENT-600,35,20
+15,Belov Stanislav Lvovich,s.belov@edu.ru,+79034445566,2000-04-30,23,2018,Chemistry,HM-182,4.4,84,95.0,5000,Science Club,False,True,Active,Russian,MENT-095,26,18
+16,Galkina Darya Sergeevna,d.galkina@edu.ru,+79168765432,2002-11-11,21,2020,Sociology,SC-205,3.6,70,82.4,0,Volunteering,False,True,Active,Russian,MENT-333,16,9
+17,Danilov Maxim Ilyich,m.danilov@edu.ru,+79021234567,2004-07-07,19,2022,Computer Science,CS-224,4.0,79,89.6,4000,eSports,False,False,Active,Russian,MENT-102,24,11
+18,#Invalid data,,,,,2017,Physics,F-171,3.1,60,45.0,-1000,,,False,Expelled,,,0,0
+19,Ershova Kristina Borisovna,k.ershova@edu.ru,+79150001122,2003-03-28,20,2021,Linguistics,LG-218,4.7,91,96.8,6500,Translation,False,True,Active,German,MENT-207,28,14
+20,Frolov Kirill Andreevich,k.frolov@edu.ru,+79098887766,2001-12-24,22,2019,Economics,EK-195,3.4,68,76.1,0,Football,True,True,Active,Russian,MENT-145,13,1
+21,#Invalid data,test.user@domain.com,+7(495)123-45-67,2006-02-29,17,2023,Biology,BIO-231,6.1,110,101.0,15000,Genetics,False,True,Academic Leave,English,MENT-055,-5,-2
+22,Gromov Alexander Pavlovich,a.gromov@edu.ru,+79162345678,2002-09-09,21,2020,Mathematics,MM-204,4.8,94,99.2,7500,Olympiads,False,False,Active,Russian,MENT-045,32,16
+23,Sokolova Yana Valeryevna,y.sokolova@edu.ru,+79033334444,2004-05-01,19,2022,Journalism,ZHR-228,4.1,80,90.5,3500,Blogging,False,True,Active,Russian,MENT-159,19,7
+24,Kovalev Denis Olegovich,d.kovalev@edu.ru,+79165432109,2000-08-17,23,2018,Computer Science,CS-186,3.7,74,84.7,0,,False,False,Active,Russian,MENT-099,21,13
+25,#Invalid data,hello@world,999,2003-10-10,20,2021,Arts,IS-215,2.9,55,-5.0,2500,Dance,Maybe,True,Active,Spanish,MENT-400,8,4
+26,Pavlova Olga Sergeevna,o.pavlova@edu.ru,+79047778899,2003-01-19,20,2021,Psychology,PS-212,4.5,86,93.8,5500,Music,False,True,Active,Russian,MENT-310,23,8
+27,Shcherbakov Vladislav Eduardovich,v.shcherbakov@edu.ru,+79171112233,2001-06-03,22,2019,Law,YR-194,3.9,78,87.2,4000,Debates,False,False,Active,Russian,MENT-190,15,6
+28,Vorobyeva Anastasia Romanovna,a.vorobyeva@edu.ru,+79045678901,2004-12-25,19,2022,Design,DZ-227,4.2,83,91.0,3000,Photography,False,True,Active,Russian,MENT-415,20,5
+29,#Invalid data,real.email@edu.ru,,1999-04-04,24,2020,Construction,ST-202,4.0,82,89.0,5000,Robotics,False,True,Active,Russian,MENT-120,18,10
+30,Lebedev Grigory Vasilyevich,g.lebedev@edu.ru,+79163216549,2002-03-08,21,2020,History,IST-206,3.3,62,79.5,0,,True,False,Active,Russian,MENT-280,11,12
+31,Zaytseva Veronika Andreevna,v.zaytseva@edu.ru,+79051112233,2003-09-14,20,2021,Management,MN-219,4.3,85,92.5,4700,Dancing,False,True,Active,Russian,MENT-225,19,6
+32,Semenov Timur Romanovich,t.semenov@edu.ru,+79169998877,2001-05-05,22,2019,Physics,F-193,3.8,77,86.3,3200,,False,True,Active,Russian,MENT-089,16,5
+33,#Invalid data,user@test,+79000000000,2010-01-01,13,2035,Astronomy,AS-301,10.0,200,110.0,20000,Astrophotography,True,False,Active,Chinese,MENT-777,50,30
+34,Fedorova Arina Maximovna,a.fedorova@edu.ru,+79024445566,2004-08-20,19,2022,Linguistics,LG-225,4.6,89,95.2,5800,Literature,False,False,Active,French,MENT-208,26,15
+35,Kozlov Ivan Dmitrievich,i.kozlov@edu.ru,+79167778899,2000-11-11,23,2018,Computer Science,CS-184,4.1,80,88.7,3800,Programming,False,True,Active,Russian,MENT-103,22,9
+36,Antonova Sofia Kirillovna,s.antonova@edu.ru,+79038889900,2003-12-07,20,2021,Psychology,PS-216,4.4,84,93.1,5200,Drawing,False,True,Active,Russian,MENT-312,21,11
+37,#Invalid data,mail@mail,555-55-55,1985-07-07,38,2022,Geology,GL-221,2.5,45,30.0,10000,,False,True,Expelled,Russian,MENT-050,5,1
+38,Borisov Egor Alexandrovich,e.borisov@edu.ru,+79172345678,2002-02-28,21,2020,Economics,EK-204,3.9,76,84.9,2900,Stock Market,False,False,Active,Russian,MENT-146,17,4
+39,Vlasova Darya Alekseevna,d.vlasova@edu.ru,+79049990011,2004-03-17,19,2022,Design,DZ-229,4.7,91,97.1,6200,Graphics,False,True,Active,Russian,MENT-416,24,7
+40,Melnikov Artem Sergeevich,a.melnikov@edu.ru,+79176543210,2001-09-23,22,2019,Mathematics,MM-196,4.2,82,90.8,4100,Chess,False,True,Active,Russian,MENT-046,20,8
+41,#Invalid data,student11,89990001122,2007-06-31,16,2024,Robotics,RT-241,3.0,59,75.5,1800,Robots,Y,No,Active,English,MENT-600,12,3
+42,Sorokina Alena Vyacheslavovna,a.sorokina@edu.ru,+79051113344,2003-04-09,20,2021,Journalism,ZHR-223,4.0,78,87.5,3300,Blogging,False,False,Active,Russian,MENT-160,18,6
+43,Tikhonov Roman Olegovich,r.tikhonov@edu.ru,+79168889900,2000-06-15,23,2018,Chemistry,HM-184,4.5,88,94.3,4900,Science,False,True,Active,Russian,MENT-096,25,14
+44,Ushakova Ksenia Pavlovna,k.ushakova@edu.ru,+79042223344,2004-10-11,19,2022,Sociology,SC-227,3.7,71,83.6,2600,Volunteering,True,True,Active,Russian,MENT-334,15,10
+45,#Invalid data,@edu.ru,+7-916-777-8899,1997-12-12,26,2021,Pharmacy,FR-218,4.8,93,98.5,7100,Chemistry,False,True,Academic Leave,German,MENT-200,28,17
+46,Grigoryev Mikhail Yuryevich,m.grigoryev@edu.ru,+79053334455,2002-07-03,21,2020,Law,YR-206,4.1,81,89.9,3900,Debates,False,False,Active,Russian,MENT-191,19,7
+47,Kudryavtseva Polina Igorevna,p.kudryavtseva@edu.ru,+79170001122,2003-05-25,20,2021,Computer Science,CS-218,4.9,96,99.5,7800,Programming,False,True,Active,Russian,MENT-104,29,13
+48,Baranov Denis Viktorovich,d.baranov@edu.ru,+79045556677,2001-02-08,22,2019,Physics,F-195,3.6,69,81.2,2400,,False,True,Active,Russian,MENT-090,14,4
+49,Stepanova Ekaterina Denisovna,e.stepanova@edu.ru,+79181234567,2004-01-31,19,2022,Management,MN-224,4.3,86,92.0,4400,Tennis,False,False,Active,Russian,MENT-226,17,5
+50,#Invalid data,test@test.com,89161234567,2008-04-01,15,2026,Political Science,PL-261,3.4,67,77.8,2200,Public Speaking,False,True,Active,Russian,MENT-350,10,2
+51,Komarov Alexey Vladimirovich,a.komarov@edu.ru,+79047770011,2002-12-19,21,2020,History,IST-209,3.5,66,80.1,2000,,True,False,Active,Russian,MENT-281,13,11
+52,Orekhova Vitalina Sergeevna,v.orekhova@edu.ru,+79173456789,2003-08-02,20,2021,Linguistics,LG-221,4.8,92,98.2,6900,Translation,False,True,Active,Spanish,MENT-209,27,16
+53,Larin Arseny Petrovich,a.larin@edu.ru,+79048889900,2001-03-14,22,2019,Mathematics,MM-198,4.6,90,95.7,5300,Olympiads,False,True,Active,Russian,MENT-047,23,10
+54,#Invalid data,no-reply@gmail.com,8-800-555-35-35,1990-01-01,33,2020,Architecture,AR-202,4.2,83,90.0,4600,Design,False,True,Active,Russian,MENT-500,16,6
+55,Egorov Nikita Anatolyevich,n.egorov@edu.ru,+79182345678,2004-06-28,19,2022,Economics,EK-228,3.8,73,85.4,3100,Economics,False,False,Active,Russian,MENT-147,18,3
+56,Safonova Ulyana Romanovna,u.safonova@edu.ru,+79051223344,2003-11-09,20,2021,Psychology,PS-219,4.4,87,93.5,5100,Psychology,False,True,Active,Russian,MENT-313,20,9
+57,Maksimov Vladimir Ilyich,v.maksimov@edu.ru,+79168990011,2000-10-22,23,2018,Computer Science,CS-188,4.0,79,88.2,3700,Development,False,True,Active,Russian,MENT-105,21,12
+58,#Invalid data,contact@site,123,2009-05-05,14,2027,Ecology,EK-271,2.8,52,65.0,1900,Nature,True,False,Active,Russian,MENT-800,7,1
+59,Nikitina Alena Vasilyevna,a.nikitina@edu.ru,+79043334455,2002-04-12,21,2020,Journalism,ZHR-226,4.5,88,94.8,5400,Journalism,False,False,Active,Russian,MENT-161,22,8
+60,Polyakov Dmitry Stanislavovich,d.polyakov@edu.ru,+79175678901,2001-07-29,22,2019,Chemistry,HM-186,4.7,91,96.9,6400,Research,False,True,Active,Russian,MENT-097,27,19
+61,Guseva Marina Andreevna,m.guseva@edu.ru,+79054445566,2004-09-05,19,2022,Sociology,SC-229,3.9,75,86.7,2800,Sociology,True,True,Active,Russian,MENT-335,16,11
+62,#Invalid data,info,9012345678,1998-08-18,25,2021,Veterinary,VT-218,4.1,84,91.5,4300,Animals,False,True,Active,Russian,MENT-300,19,7
+63,Alekseev Konstantin Pavlovich,k.alekseev@edu.ru,+79176789012,2003-02-26,20,2021,Law,YR-208,4.2,85,92.7,4500,Law,False,False,Active,Russian,MENT-192,18,6
+64,Romanova Olesya Valeryevna,o.romanova@edu.ru,+79046667788,2002-05-07,21,2020,Design,DZ-226,4.8,94,98.9,7200,Design,False,True,Active,Russian,MENT-417,26,9
+65,Sazonov Ilya Denisovich,i.sazonov@edu.ru,+79177890123,2001-01-13,22,2019,Physics,F-197,3.7,72,83.1,2700,Physics,False,True,Active,Russian,MENT-091,15,5
+66,#Invalid data,admin@admin.ru,+7-916-123-45-67,2005-12-12,18,2023,Mathematics,MM-231,5.0,100,100.0,10000,Mathematics,False,False,Active,Russian,MENT-048,30,20
+67,Terentyeva Valeria Olegovna,v.terentyeva@edu.ru,+79057778899,2003-10-03,20,2021,Management,MN-221,4.1,80,89.3,3600,Management,False,True,Active,Russian,MENT-227,19,4
+68,Filippov Artur Eduardovich,a.filippov@edu.ru,+79178901234,2000-09-09,23,2018,History,IST-192,3.4,64,78.4,2100,History,True,False,Active,Russian,MENT-282,12,13
+69,Shestakova Angelina Mikhailovna,a.shestakova@edu.ru,+79058889900,2004-07-16,19,2022,Linguistics,LG-228,4.6,89,95.5,5600,Linguistics,False,False,Active,Chinese,MENT-210,25,14
+70,#Invalid data,user123@mail.ru,89501234567,1996-03-03,27,2020,Philosophy,FL-204,3.2,61,74.2,2300,Philosophy,False,True,Expelled,Russian,MENT-550,11,8
+71,Dmitriev Sergey Viktorovich,s.dmitriev@edu.ru,+79180001122,2002-08-24,21,2020,Computer Science,CS-210,4.3,86,93.2,4800,Computer Science,False,True,Active,Russian,MENT-106,24,15
+72,Belyaeva Evgenia Alexandrovna,e.belyaeva@edu.ru,+79059990011,2003-06-20,20,2021,Psychology,PS-222,4.7,92,97.8,6700,Psychology,False,True,Active,Russian,MENT-314,23,10
+73,Gorbunov Roman Sergeevich,r.gorbunov@edu.ru,+79181234567,2001-04-17,22,2019,Economics,EK-210,3.9,77,86.0,3400,Economics,False,False,Active,Russian,MENT-148,17,2
+74,#Invalid data,student@edu,999-99-99,2007-01-01,16,2024,Biology,BIO-241,3.3,63,79.0,2500,Biology,Y,Yes,Active,English,MENT-060,13,4
+75,Kolesnikov Anton Pavlovich,a.kolesnikov@edu.ru,+79051114455,2004-02-09,19,2022,Journalism,ZHR-230,4.4,87,94.0,5200,Journalism,False,True,Active,Russian,MENT-162,21,7
+76,Tsvetkova Diana Alekseevna,d.tsvetkova@edu.ru,+79182345678,2003-12-25,20,2021,Design,DZ-231,4.9,95,99.1,7400,Design,False,False,Active,Russian,MENT-418,28,12
+77,Andreev Pavel Olegovich,p.andreev@edu.ru,+79062223344,2000-05-28,23,2018,Chemistry,HM-188,4.2,83,91.2,4200,Chemistry,False,True,Active,Russian,MENT-098,19,16
+78,#Invalid data,test@test,8-916-555-44-33,1999-07-07,24,2021,Sociology,SC-218,4.0,78,88.5,3800,Sociology,False,True,Active,Russian,MENT-336,16,9
+79,Silina Veronika Romanovna,v.silina@edu.ru,+79183456789,2002-11-03,21,2020,Law,YR-212,4.5,90,96.2,5900,Law,False,True,Active,Russian,MENT-193,20,8
+80,Lykov Daniil Igorevich,d.lykov@edu.ru,+79063334455,2001-08-12,22,2019,Mathematics,MM-202,4.8,93,98.6,7000,Mathematics,False,False,Active,Russian,MENT-049,26,17
+81,Mikheeva Alina Valeryevna,a.mikheeva@edu.ru,+79065556677,2004-04-04,19,2022,Linguistics,LG-230,4.3,85,92.9,4700,Linguistics,False,True,Active,Japanese,MENT-211,22,13
+82,#Invalid data,hello@gmail.com,89167778899,2006-06-06,17,2023,Physics,F-231,4.7,91,97.0,6600,Physics,False,True,Active,Russian,MENT-092,25,18
+83,Noskov Ivan Sergeevich,i.noskov@edu.ru,+79184567890,2003-03-15,20,2021,Computer Science,CS-222,4.1,82,90.1,4000,Computer Science,False,False,Active,Russian,MENT-107,23,11
+84,Panova Kira Dmitrievna,k.panova@edu.ru,+79067778899,2002-09-27,21,2020,Psychology,PS-225,4.6,88,95.9,5700,Psychology,False,True,Active,Russian,MENT-315,19,6
+85,Gavrilov Egor Nikolaevich,e.gavrilov@edu.ru,+79068889900,2001-12-06,22,2019,Economics,EK-214,3.7,74,84.3,3200,Economics,True,True,Active,Russian,MENT-149,16,3
+86,#Invalid data,user@user.com,8-800-2000-600,1994-02-02,29,2020,History,IST-206,3.0,57,69.8,1800,History,False,False,Expelled,Russian,MENT-285,9,5
+87,Krylov Artem Vadimovich,a.krylov@edu.ru,+79185678901,2004-05-19,19,2022,Journalism,ZHR-232,4.2,84,93.7,4900,Journalism,False,True,Active,Russian,MENT-163,20,8
+88,Efimova Sofia Artemovna,s.efimova@edu.ru,+79069990011,2003-01-08,20,2021,Design,DZ-233,4.7,90,97.4,6300,Design,False,False,Active,Russian,MENT-419,25,10
+89,Komissarov Mark Alexandrovich,m.komissarov@edu.ru,+79186789012,2000-07-21,23,2018,Chemistry,HM-190,4.4,86,94.6,5400,Chemistry,False,True,Active,Russian,MENT-099,21,15
+90,#Invalid data,student99@edu.ru,9161234567,2008-08-08,15,2026,Mathematics,MM-261,4.5,89,96.0,6000,Mathematics,False,True,Active,Russian,MENT-050,24,19
+91,Lapteva Ulyana Viktorovna,u.lapteva@edu.ru,+79071112233,2002-10-10,21,2020,Sociology,SC-232,3.8,76,87.1,3500,Sociology,False,True,Active,Russian,MENT-337,18,7
+92,Subbotin Alexey Denisovich,a.subbotin@edu.ru,+79187890123,2003-07-04,20,2021,Law,YR-215,4.0,79,88.8,4100,Law,False,False,Active,Russian,MENT-194,17,4
+93,Kazakova Arina Evgenyevna,a.kazakova@edu.ru,+79072223344,2004-03-23,19,2022,Linguistics,LG-232,4.8,93,98.7,7100,Linguistics,False,True,Active,Korean,MENT-212,26,14
+94,#Invalid data,contact@contact,495-123-45-67,1993-05-05,30,2019,Physics,F-195,4.1,81,90.5,4600,Physics,False,True,Active,Russian,MENT-093,22,12
+95,Rogov Kirill Alekseevich,k.rogov@edu.ru,+79188901234,2001-11-17,22,2019,Computer Science,CS-192,4.3,87,94.2,5100,Computer Science,False,True,Active,Russian,MENT-108,24,16
+96,Ovchinnikova Maria Pavlovna,m.ovchinnikova@edu.ru,+79073334455,2003-09-29,20,2021,Psychology,PS-228,4.5,86,95.1,5500,Psychology,False,False,Active,Russian,MENT-316,21,9
+97,Semenova Alisa Igorevna,a.semenova@edu.ru,+79074445566,2004-06-13,19,2022,Economics,EK-229,3.9,75,85.8,3300,Economics,True,True,Active,Russian,MENT-150,15,2
